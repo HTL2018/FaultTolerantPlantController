@@ -1,6 +1,10 @@
-fi_param = int32(2^0);
+%Simulation parameters
+fi_param = int32(0); % 0 = no fault injection
 WaterLevelSensor_fi_bitmask = 0;
 Thermocouple_fi_bitmask = 0;
+water_demand = 0;
+water_leak = 0;
+cold_water_inject = 0;
 
 %Controller FI Parameters
 %%Boolean FI 
