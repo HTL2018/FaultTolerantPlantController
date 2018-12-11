@@ -1,4 +1,6 @@
 fi_param = int32(2^0);
+WaterLevelSensor_fi_bitmask = 0;
+Thermocouple_fi_bitmask = 0;
 
 %Controller FI Parameters
 %%Boolean FI 
@@ -19,12 +21,12 @@ Startup1_fi = int32(2^10);
 Startup2_fi = int32(2^11);
 
 %%Encoded FI
-WaterLevelSensor_fi_bitpos = 0;
+
 WaterLevelSensor_fi = int32(2^12);
 WaterLevelSensor1_fi = int32(2^13);
 WaterLevelSensor2_fi = int32(2^14);
 
-Thermocouple_fi_bitpos = 0;
+
 Thermocouple_fi = int32(2^15);
 Thermocouple1_fi = int32(2^16);
 Thermocouple2_fi = int32(2^17);
