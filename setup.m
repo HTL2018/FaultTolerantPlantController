@@ -6,26 +6,6 @@ water_demand = 0;
 water_leak = 0;
 cold_water_inject = 0;
 
-set_param('plant_emulator','Solver','FixedStepDiscrete');
-set_param('controller','Solver','FixedStepDiscrete');
-set_param('controller_fault_injector','Solver','FixedStepDiscrete');
-set_param('decoder','Solver','FixedStepDiscrete');
-set_param('corrector','Solver','FixedStepDiscrete');
-set_param('encoder','Solver','FixedStepDiscrete');
-set_param('encoder_test','Solver','FixedStepDiscrete');
-set_param('corrector','Solver','FixedStepDiscrete');
-set_param('detector','Solver','FixedStepDiscrete');
-set_param('fault_injector','Solver','FixedStepDiscrete');
-set_param('HammingCodeDecoder','Solver','FixedStepDiscrete');
-set_param('Majority_Voter','Solver','FixedStepDiscrete');
-set_param('voter','Solver','FixedStepDiscrete');
-set_param('voter_circuit','Solver','FixedStepDiscrete');
-
-
-
-%set_param('mymodel','Solver','ode15s','MaxOrder','3')
-
-
 %Controller FI Parameters
 %%Boolean FI 
 TempControl_button_fi = int32(2^0);
