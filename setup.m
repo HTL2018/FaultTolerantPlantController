@@ -1,13 +1,17 @@
 %Simulation parameters
-fi_param = int32(0); % 0 = no fault injection
-WaterLevelSensor_fi_bitmask = uint16(0);
+fi_param = int32(WaterLevelSensor_fi); % 0 = no fault injection
+WaterLevelSensor_fi_bitmask = uint16(128);
 Thermocouple_fi_bitmask = uint16(0);
-water_demand = 0;
+KP = 0;
+KI = .001;
+KD = 0.;
+pump_rate = 20;
+water_demand = .5;
 water_leak = 0;
 cold_water_inject = 0;
-KP = .1;
-KI = .1;
-KD = 0.;
+A = ((6+5/8)/2)^2;
+heater_temp = 125;
+tank_x0 = 50;
 
 %Controller FI Parameters
 %%Boolean FI 
