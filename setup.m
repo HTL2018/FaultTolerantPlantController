@@ -1,5 +1,5 @@
 %Simulation parameters
-fi_param = int32(WaterLevelSensor_fi); % 0 = no fault injection
+
 WaterLevelSensor_fi_bitmask = uint16(128);
 Thermocouple_fi_bitmask = uint16(0);
 KP = 0;
@@ -55,6 +55,8 @@ DownSolenoid2_fi = int32(2^23);
 HeatingElement_fi = int32(2^24);
 HeatingElement1_fi = int32(2^25);
 HeatingElement2_fi = int32(2^26);
+
+fi_param = int32(0); % 0 = no fault injection
 
 %%Interger FI
 % WaterLevelSetpoint_fi_val = 0;
